@@ -1,5 +1,3 @@
-// ignore_for_file: depend_on_referenced_packages
-
 import 'package:flutter/material.dart';
 // import http
 import 'package:http/http.dart' as http;
@@ -13,10 +11,10 @@ class Task8 extends StatefulWidget {
 
 class _Task8State extends State<Task8> {
   String sample = "";
-  //************** function name and returned data typ 1
+  //**************************************** function name and returned data typ 1
   //void fetchAllProducts()async {}
   void fetchAllProducts() async {
-    // ************** past code from postman (implementation)2
+    // ************************************** past code from postman (implementation)2
     var request =
         http.Request('GET', Uri.parse('https://fakestoreapi.com/products'));
 
@@ -31,7 +29,7 @@ class _Task8State extends State<Task8> {
     }
   }
   // void callOpenAiApi(data (video to data )) async {
-  //   // ************** past code from postman (implementation)2
+  //   // ************************************** past code from postman (implementation)2
   //   var request =
   //       http.Request('POST', Uri.parse('https://fakestoreapi.com/products'));
 
@@ -51,7 +49,7 @@ class _Task8State extends State<Task8> {
   void initState() {
     // TODO: implement initState
     super.initState();
-    // call async function ********3
+    // call async function **********************3
     fetchAllProducts();
   }
 
